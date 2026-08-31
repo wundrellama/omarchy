@@ -700,6 +700,7 @@ Panel {
 
               Text {
                 width: parent.width
+                textFormat: Text.PlainText
                 text: root.gatewayRemoteMode
                   ? "Read account-wide usage from Hermes running on another computer or server."
                   : "Read usage directly from Hermes on this computer. No gateway login is required."
@@ -758,6 +759,7 @@ Panel {
               Text {
                 visible: root.gatewayLoginError !== ""
                 width: parent.width
+                textFormat: Text.PlainText
                 text: root.gatewayLoginError
                 color: root.urgent
                 font.family: root.fontFamily
